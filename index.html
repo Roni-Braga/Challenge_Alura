@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Decodificador</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.png" alt="imagem da Logo">
+    </div>
+  </header>
+  <main>
+    <section class="msg">
+        <div class="msg-digitada">
+        <input type="text" name="msg" placeholder="Digite Seu Texto" id="texto">
+        </div>
+        <div class="info">
+          <img src="info.png">
+          <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+        <div class="botao">
+            <input type="button" name="Criptografar" value="Criptografar" class="btn" onclick="btnEncriptar()">
+            <input type="submit" name="Descriptografar" value="Descriptografar" onclick="btnDesencriptar()" >
+        </div>
+    </section>
+    <section class="msg-resultado">
+      <div id="mostra">  
+      <div class="imagem">
+            <img src="pesquisa.png">
+        </div>
+        <div class="aviso">
+            <p><strong>Nenhuma Mensagem Encontrada</strong></p>
+
+        </div>
+      </div>
+
+        <div class="dica">
+          <p>Digite um texto que você deseja</p>
+          <p>criptografar ou descriptografar</p>
+          
+        </div>
+        <input type="text" name="mensagem" id="mensagem">
+        <input type="submit" name="Copiar" value="Copiar" class="btn-copiar" onclick="copiar()">
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvedor</p>
+    <p>Ronielson de Sousa Braga</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
