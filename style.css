@@ -138,20 +138,59 @@ section > .dica + input{
     height: 100px;
     
 }
-
+@media (min-width:1200px){
+   .msg-resultado{
+    height: 800px;
+   }
+  .msg-resultado  .imagem{
+    padding: 10px;
+    position: relative;
+    top: 100px;
+  }
+   .msg-resultado .dica {
+    position: absolute;
+    top: 500px;
+    padding: 10px;
+    left: 10px;
+   }
+   .msg-resultado .aviso{
+    position: absolute;
+    top: 450px;
+    padding: 10px;
+    left: 10px;
+   }
+    .info{
+        top: 500px;
+    }
+    footer{
+        top: 880px;
+    }
+    
+}
 @media (min-width:768px) and (max-width:1023px){
     footer, #mostra > .imagem{
         display: none;
     }
+    *{
+        font-size: 24px;
+    }
+    .msg-digitada > #texto{
+        font-size: 30px;
+    }
+    .msg{
+        position: relative;
+    }
     .msg-resultado{
         position: absolute;
-        left: 60px;
+        left: 70px;
         width: 88%;
-        height: 133px;
+        height: 163px;
         top: 860px;
+        margin-top: 30px;
+       
     }
     .msg-resultado  .aviso p{
-        font-size: 18px;
+        
         margin-top: 25px;
     }
     .msg-resultado .dica{
@@ -161,25 +200,34 @@ section > .dica + input{
         
     }
     .msg-resultado .dica p{
-        font-size: 15px;
+       
         padding-right: 5px;
         
         
 
     }
     .botao{
-        
-        top: 730px;
-        left: 100px;
+        position:absolute;
+        top: 570px;
+        right: 170px;
         display: flex;
         height: 100px;
         align-items: center;
-        
+             
         
     }
+    
     .info{
         position: relative;
         top: 500px;
+    }
+    .info p{
+        font-size: 24px;
+    }
+    .btn-copiar{
+        top: 90px;
+        left: 200px;
+        height: 50px;
     }
    
    
@@ -235,29 +283,33 @@ section > .dica + input{
     }
 
 }
-@media (max-width:375px){
+@media (max-width:480px){
     footer, #mostra > .imagem{
         display: none;
     }
-    .msg-resultado{
-        position: absolute;
-        left: 30px;
-        width: 367px;
-        height: 186px;
-        top: 770px;
-    }
+    
     .botao{        
-        top: 520px;
-        right: 25px;        
+        top: 480px;
+        left: 60px;        
         height: 100px;
         display: inline;
+        
     
                       
     }
     .botao >.btn + input{
         margin-top: 20px;
     }
-    
+    .msg{
+        position: relative;
+    }
+    .msg-resultado{
+        position: absolute;
+        left: 60px;
+        width: 367px;
+        height: 186px;
+        top: 670px;
+    }
     .msg-resultado  .aviso p{
         font-size: 24px;
         margin-top: 25px;
@@ -274,9 +326,9 @@ section > .dica + input{
     display: none;
    }
    .info{
-    position: relative;
-    left: 20px;
-    width: 400px;
+    display: none;
+    
+    
    }
    
 }
