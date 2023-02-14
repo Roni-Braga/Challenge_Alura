@@ -9,7 +9,7 @@ A letra "u" é convertida para "ufat"
 */
 function esconde(){
     document.getElementById('mostra').style.display="none"
-    document.querySelector('.dica').style.display="none"
+    document.querySelector('.msg').style.display="none"
 }
 function aparece(){
     document.querySelector('.btn-copiar').style.display ="block"
